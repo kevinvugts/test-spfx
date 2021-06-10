@@ -9,7 +9,7 @@ import {
   PropertyPaneToggle,
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { SPComponentLoader } from '@microsoft/sp-loader'
+//import { SPComponentLoader } from '@microsoft/sp-loader'
 
 import * as strings from 'WebpartDgdmHelloworldWebPartStrings';
 import {WebpartDgdmHelloworld} from './components/WebpartDgdmHelloworld';
@@ -26,7 +26,7 @@ export interface IWebpartDgdmHelloworldWebPartProps {
 export default class WebpartDgdmHelloworldWebPart extends BaseClientSideWebPart<IWebpartDgdmHelloworldWebPartProps> {
 
   public render(): void {
-    SPComponentLoader.loadCss("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+    // SPComponentLoader.loadCss("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"); // <-- this is not desired since we need to do some overwrites before bootstrap is loaded
 
 
     const element: React.ReactElement<IWebpartDgdmHelloworldProps> = React.createElement(

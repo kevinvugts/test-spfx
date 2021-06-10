@@ -1,2 +1,296 @@
+/* ==========================================================================
+Colors
+========================================================================== */
+$white: #fff;
+$gray-100: #fafafa; // #f8f9fa
+$gray-200: #f2f4f7; // #e9ecef
+$gray-300: #e6e6e8; // #dee2e6
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #7f7f7f; // #6c757d
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
 
-@import "~bootstrap/scss/bootstrap"
+$blue: #007bff;
+$green: #038808; // #28a745
+$cyan: #17a2b8;
+$yellow: #ffde00;
+$yellow-light: #ffeb00;
+$yellow-dark: #d3a304;
+$red: #f00; // #dc3545;
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $yellow-dark;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-primary: #007f80;
+$theme-primary-dark: #121934;
+$theme-primary-light: #294795;
+$theme-secondary: #0f1223;
+$theme-secondary-dark: #0062ff;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "theme-primary": $theme-primary,
+    "theme-primary-dark": $theme-primary-dark,
+    "theme-primary-light": $theme-primary-light,
+    "theme-secondary": $theme-secondary,
+    "theme-secondary-dark": $theme-secondary-dark,
+    "blue": $blue,
+    "green": $green,
+    "cyan": $cyan,
+    "yellow": $yellow,
+    "yellow-light": $yellow-light,
+    "yellow-dark": $yellow-light,
+    "red": $red,
+    "white": $white,
+    "black": $black,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-600": $gray-600,
+  ),
+  $theme-colors
+);
+
+/* ==========================================================================
+Body
+========================================================================== */
+$body-bg: $white;
+$body-color: $theme-secondary;
+
+/* ==========================================================================
+Box shadow
+========================================================================== */
+$box-shadow-1: 0 2px 10px 0 rgba($black, 0.1);
+
+// /* ==========================================================================
+// Fonts
+// ========================================================================== */
+// $font-family-1: "Poppins", sans-serif;
+// $font-family-2: "Roboto", sans-serif;
+// $font-family-base: $font-family-1;
+//
+// $font-size-base: 1rem; // 16px
+//
+// $font-weight-bold: 700;
+// $font-weight-medium: 500;
+
+/* ==========================================================================
+Grid breakpoints
+========================================================================== */
+$grid-breakpoints: ();
+$grid-breakpoints: map-merge(
+  (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1500px,
+  ),
+  $grid-breakpoints
+);
+
+/* ==========================================================================
+Grid containers
+========================================================================== */
+$container-max-widths: ();
+$container-max-widths: map-merge(
+  (
+    xs: 480px,
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1440px,
+  ),
+  $container-max-widths
+);
+
+/* ==========================================================================
+Grid column
+========================================================================== */
+$grid-gutter-width: 30px;
+
+/* ==========================================================================
+Spacing
+========================================================================== */
+$spacer: 0.625rem;
+$spacers: ();
+/* stylelint-disable */
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer,
+    // 10px
+    15:
+      (
+        $spacer * 1.5,
+      ),
+    // 15px
+    2:
+      (
+        $spacer * 2,
+      ),
+    // 20px
+    25:
+      (
+        $spacer * 2.5,
+      ),
+    // 25px
+    3:
+      (
+        $spacer * 3,
+      ),
+    // 30px
+    35:
+      (
+        $spacer * 3.5,
+      ),
+    // 35px
+    4:
+      (
+        $spacer * 4,
+      ),
+    // 40px
+    45:
+      (
+        $spacer * 4.5,
+      ),
+    // 45px
+    5:
+      (
+        $spacer * 5,
+      ),
+    // 50px
+    55:
+      (
+        $spacer * 5.5,
+      ),
+    // 55px
+    6:
+      (
+        $spacer * 6,
+      ),
+    // 60px
+    65:
+      (
+        $spacer * 6.5,
+      ),
+    // 65px
+    7:
+      (
+        $spacer * 7,
+      ),
+    // 70px
+    75:
+      (
+        $spacer * 7.5,
+      ),
+    // 75px
+    8:
+      (
+        $spacer * 8,
+      ),
+    // 80px
+    85:
+      (
+        $spacer * 8.5,
+      ),
+    // 85px
+    9:
+      (
+        $spacer * 9,
+      ),
+    // 90px
+    95:
+      (
+        $spacer * 9.5,
+      ),
+    // 95px
+    10:
+      (
+        $spacer * 10,
+      ),
+    20: (
+      $spacer * 20,
+    ),
+  ),
+  $spacers
+);
+/* stylelint-enable */
+
+/* ==========================================================================
+Components
+========================================================================== */
+$border-width: 1px;
+$border-color: $gray-300;
+
+$border-radius: 0.25rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+
+$border-radius-1: 1.25rem; // 20px
+$border-radius-2: 0.625rem; // 10px
+
+/* ==========================================================================
+Z-index
+========================================================================== */
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+/* ==========================================================================
+Cards
+========================================================================== */
+$card-border-width: 0;
+$card-border-radius: $border-radius-2;
+$card-border-color: rgba($black, 0.125);
+$card-bg: $white;
+$card-img-overlay-padding: 1.25rem;
+
+/* ==========================================================================
+Inputs
+========================================================================== */
+$input-btn-padding-y: 0.9375rem; // 15px
+$input-btn-padding-x: $spacer * 3; // 30px
+$input-btn-padding-y-sm: $spacer; // 10px
+$input-btn-padding-x-sm: $spacer * 2; // 20px
+$input-btn-padding-y-lg: 0.9375rem; // 15px
+$input-btn-padding-x-lg: $spacer * 3; // 30px
+
+/* ==========================================================================
+Buttons
+========================================================================== */
+$btn-padding-y: $input-btn-padding-y;
+$btn-padding-x: $input-btn-padding-x;
+
+$btn-border-radius: $spacer;
+$btn-border-radius-lg: $btn-border-radius;
+$btn-border-radius-sm: $btn-border-radius;
+
+/* ==========================================================================
+Bootstrap - Must be loaded second
+========================================================================== */
+@import "~bootstrap/scss/bootstrap" // <- this line causes the semi colon issue

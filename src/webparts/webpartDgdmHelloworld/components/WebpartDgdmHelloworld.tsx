@@ -6,8 +6,8 @@ import { IWebpartDgdmHelloworldProps } from "./IWebpartDgdmHelloworldProps";
 // import { PrimaryButton } from "@fluentui/react/lib/Button";
 // import { ProgressIndicator } from "@fluentui/react/lib/ProgressIndicator";
 
-// import Popover from "react-bootstrap/Popover";
-// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+// import Popover from "react-bootstrap/Popover"; // <-- these components cause the popperjs error
+// import OverlayTrigger from "react-bootstrap/OverlayTrigger";// <-- these components cause the popperjs error
 import * as jsdiff from "diff";
 
 const answer = `Vincent (42) woont al enkele jaren zelfstandig in een sociale huurwoning, na een korte periode tijd dakloos te zijn geweest. Hij drinkt veel en z’n appartement is een bende. Hij heeft al 3 jaar ruzie met de buren. Hij wil zelf niets liever dan verhuizen. Een nieuwe start aan de andere kant van stad. Hier wordt hij gepest door de buurt en onderweg naar het winkelcentrum bedreigd door de huidige vriend van zijn ex. Die vriend woont toevallig langs de route naar de supermarkt. Er is al veel en lang hulpverlening in beeld. Onder de hulpverleners is veel verloop: niemand houdt het lang uit, en Vincent stuurt veel mensen weg. Hij is ook boos over veel fouten die professionals in het verleden hebben gemaakt. Hierdoor is volgens Vincent zijn schuldsaneringstraject mislukt. Ook in het conflict met de buren hebben hulpverleners meerdere malen proberen te bemiddelen, maar zowel meneer als zijn buren zijn niet in staat om hun gedrag aan te passen. Vincent heeft schulden maar die zijn (nog) niet problematisch. Alhoewel zijn schulden langzaam oplopen blijft hij voldoen aan z’n vaste lasten. Dit maakt het voor de woningcorporatie lastig om hem uit huis te zetten. Bovendien, telkens als ze hem aanspreken op zijn overlastgevende gedrag houdt hij zich weer een tijdje rustiger. Vincent wil nu alleen nog hulpverleners over de vloer die hem helpen met een nieuwe woning en een oplossing hebben voor zijn €3.500 betalingsachterstand bij de Belastingdienst en de zorgverzekeraar.`;
