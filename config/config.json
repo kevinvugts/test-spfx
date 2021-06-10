@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "webpart-dgdm-helloworld-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webpartDgdmHelloworld/WebpartDgdmHelloworldWebPart.js",
+          "manifest": "./src/webparts/webpartDgdmHelloworld/WebpartDgdmHelloworldWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WebpartDgdmHelloworldWebPartStrings": "lib/webparts/webpartDgdmHelloworld/loc/{locale}.js"
+  }
+}
